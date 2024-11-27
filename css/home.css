@@ -1,0 +1,53 @@
+form {
+   display: grid;
+   grid-template-columns: 1fr 70px 70px;
+   gap: 10px;
+   width: 500px;
+   padding: 7px 15px;
+   background-color: white;
+   border-radius: 15px;
+}
+
+input {
+   border: none;
+   border-radius: 5px;
+}
+
+input::placeholder {
+   color: #017579;
+}
+
+input:focus {
+   outline: none;
+}
+
+h2 {
+   margin: 0;
+   padding: 50px 0;
+}
+
+form button {
+   padding: 7px 15px;
+}
+
+p {
+   margin: 0 auto;
+   text-align: center;
+   color: white;
+   max-width: 800px;
+}
+
+#book-now {
+   margin-top: 2em;
+   padding: 10px 15px;
+}
+
+.hero {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background-color: hsla(0, 0%, 0%, 0.1);
+   color: #fff;
+}

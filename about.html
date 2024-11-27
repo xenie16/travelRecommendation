@@ -11,7 +11,9 @@
 
 <body>
    <header>
-      <h1>Travel Life</h1>
+      <a id="site-logo" href="/travel_recommendation.html">
+         <h1>Travel Life</h1>
+      </a>
       <nav>
          <ul>
             <li><a href="/travel_recommendation.html">Home</a></li>
@@ -21,47 +23,67 @@
       </nav>
    </header>
    <main>
-      <section>
+      <section class="about-section">
          <h2>ABOUT US</h2>
-         <p>Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent
-            services/products to our customers. Our mission is to <span>provide the best experience</span> for people
-            traveling to different destinations around the world.</p>
-         <p>Our values include customer satisfaction, and teamwork.
-            We believe in <span>putting our customers first</span> and <span>working together</span> to achieve our
-            goals.
-         </p>
-         <p>Feel free to explore our website to learn more about what we offer!</p>
+         <div id="about-intro">
+            <p>Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent
+               services/products to our customers. Our mission is to <span>provide the best experience</span> for people
+               traveling to different destinations around the world.</p>
+            <p>Our values include customer satisfaction, and teamwork.
+               We believe in <span>putting our customers first</span> and <span>working together</span> to achieve our
+               goals.
+            </p>
+            <p>Feel free to explore our website to learn more about what we offer!</p>
+         </div>
       </section>
-      <section>
+      <section class="team-section">
          <h2>OUR TEAM</h2>
-         <div>
-            <img src="https://picsum.photos/200" alt="Placeholder Image">
+         <div class="team-members">
             <div>
-               <h3>John Doe</h3>
-               <p>CEO</p>
+               <img src="./img/ceo.jpg" alt="Placeholder Image">
+               <div>
+                  <h3>Celina Thomas</h3>
+                  <p>CEO</p>
+               </div>
             </div>
-         </div>
-         <div>
-            <img src="https://picsum.photos/200" alt="Placeholder Image">
             <div>
-               <h3>Celina Thomas</h3>
-               <p>Team Lead</p>
+               <img src="./img/team-lead.jpg" alt="Placeholder Image">
+               <div>
+                  <h3>John Doe</h3>
+                  <p>Team Lead</p>
+               </div>
             </div>
-         </div>
-         <div>
-            <img src="https://picsum.photos/200" alt="Placeholder Image">
             <div>
-               <h3>John Doe</h3>
-               <p>Team Member</p>
+               <img src="./img/team-member.jpg" alt="Placeholder Image">
+               <div>
+                  <h3>Jeffrey Smith</h3>
+                  <p>Team Member</p>
+               </div>
             </div>
          </div>
       </section>
-      <aside>
+      <aside class="social-section">
          <ul>
-            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-            <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+            <li>
+               <a href="https://www.facebook.com/" target="_blank">
+                  <img class="social-logo" src="./img/fb.svg" alt="Facebook">
+               </a>
+            </li>
+            <li>
+               <a href="https://www.instagram.com/" target="_blank">
+                  <img class="social-logo" src="./img/instagram.svg" alt="Instagram">
+               </a>
+            </li>
+            <li>
+               <a href="https://twitter.com/" target="_blank">
+                  <img class="social-logo" src="./img/twitter.svg" alt="Twitter">
+               </a>
+            </li>
+            <li>
+               <a href="https://www.youtube.com/" target="_blank">
+                  <img class="social-logo" src="./img/yt.svg" alt="YouTube">
+               </a>
+            </li>
          </ul>
       </aside>
    </main>

@@ -3,13 +3,75 @@ body {
    padding: 0;
    background-image: url('../img/ocean.jpg');
    background-size: cover;
+   background-repeat: no-repeat;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   background-color: #333;
+   background-color: hsla(0, 0%, 0%, 0.6);
    color: #fff;
-   padding: 10px;
+   padding: 0 10%;
+}
+
+#site-logo {
+   text-decoration: none;
+   color: #fff;
+}
+
+h1 {
+   font-style: italic;
+}
+
+nav li {
+   display: inline-block;
+}
+
+nav a {
+   color: #fff;
+   text-decoration: none;
+   padding: 10px 15px;
+}
+
+nav a:hover {
+   background-color: hsla(0, 0%, 0%, 0.2);
+   color: white;
+   border-radius: 10px;
+   transition: background-color 0.3s ease;
+}
+
+h2 {
+   font-size: 5em;
+   color: #eff6f5;
+   text-align: center;
+}
+
+button {
+   background-color: #017579;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+aside {
+   display: flex;
+   flex-direction: column;
+}
+
+.social-section li {
+   list-style: none;
+}
+
+.social-section {
+   position: absolute;
+   top: 50%;
+   left: 0;
+}
+
+.social-logo {
+   width: 50px;
+   height: 50px;
 }
