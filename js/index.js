@@ -52,11 +52,10 @@ travelForm.addEventListener("submit", (event) => {
             );
          });
       }
-
+      resultsContainer.innerHTML = "";
       resultsContainer.style.display = "flex";
       searchResults.forEach(result => {
          const resultElement = document.createElement("article");
-
          resultElement.innerHTML = `
             <img class="result-image" src="${result.imageUrl}" alt="${result.name}">
             <h3>${result.name}</h3>
