@@ -18,18 +18,22 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   background-color: hsla(0, 0%, 0%, 0.2);
    color: white;
    width: 1000px;
    border-radius: 20px;
+}
+
+.team-members,
+#about-intro {
+   background-color: hsla(0, 0%, 0%, 0.2);
+   border-radius: 15px;
 }
 
 .team-members {
    display: flex;
    justify-content: center;
    gap: 3em;
-   width: 100%;
-   padding: 20px;
+   padding: 4em 6em;
 }
 
 .team-members img {
