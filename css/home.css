@@ -30,16 +30,17 @@ form button {
    padding: 7px 15px;
 }
 
-p {
+.hero-text {
    margin: 0 auto;
    text-align: center;
    color: white;
    max-width: 800px;
 }
 
-#book-now {
+.hero #book-now {
    margin-top: 2em;
    padding: 10px 15px;
+
 }
 
 .hero {
@@ -50,4 +51,36 @@ p {
    height: 100vh;
    background-color: hsla(0, 0%, 0%, 0.1);
    color: #fff;
+}
+
+.result-image {
+   width: 600px;
+   height: 400px;
+   border-radius: 10px;
+}
+
+#results-container {
+   display: none;
+   position: absolute;
+   top: 87px;
+   background-color: white;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+   padding: 2em 10%;
+
+}
+
+#results-container article {
+   margin-top: 2em;
+   max-width: 100%;
+}
+
+#results-container article p {
+   max-width: 600px;
+}
+
+#results-container .book-button {
+   padding: 10px 15px;
 }

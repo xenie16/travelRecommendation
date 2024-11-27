@@ -1,7 +1,7 @@
 "use strict";
 
 const travelForm = document.getElementById("search-form");
-const resultsContainer = document.getElementById("results");
+const resultsContainer = document.getElementById("results-container");
 const clearButton = document.getElementById("clear-button");
 
 travelForm.addEventListener("submit", (event) => {
