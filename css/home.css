@@ -60,16 +60,14 @@ form button {
 }
 
 #results-container {
-   display: none;
    position: absolute;
    top: 87px;
    background-color: white;
-   display: flex;
+   display: none;
    flex-wrap: wrap;
    justify-content: center;
    gap: 20px;
    padding: 2em 10%;
-
 }
 
 #results-container article {

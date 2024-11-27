@@ -53,6 +53,7 @@ travelForm.addEventListener("submit", (event) => {
          });
       }
 
+      resultsContainer.style.display = "flex";
       searchResults.forEach(result => {
          const resultElement = document.createElement("article");
 
@@ -72,4 +73,5 @@ travelForm.addEventListener("submit", (event) => {
 
 clearButton.addEventListener("click", () => {
    resultsContainer.innerHTML = "";
+   resultsContainer.style.display = "none";
 });
