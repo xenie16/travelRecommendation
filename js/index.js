@@ -1,17 +1,16 @@
 "use strict";
 
-const apiUrl = "travel_recommendation_api.json";
-
 const travelForm = document.getElementById("search-form");
+const resultsContainer = document.getElementById("results");
+const clearButton = document.getElementById("clear-button");
 
 travelForm.addEventListener("submit", (event) => {
    event.preventDefault();
-
-   const destination = document.getElementById("search").value.toLowerCase();
+   const destination = document.getElementById("search").value.toLowerCase().trim();
 
    axios({
       method: "GET",
-      url: apiUrl
+      url: "travel_recommendation_api.json"
    }).then((response) => {
       const data = response.data;
       let searchResults = [];
@@ -54,8 +53,23 @@ travelForm.addEventListener("submit", (event) => {
          });
       }
 
-      console.log(searchResults);
+      searchResults.forEach(result => {
+         const resultElement = document.createElement("article");
+
+         resultElement.innerHTML = `
+            <img class="result-image" src="${result.imageUrl}" alt="${result.name}">
+            <h3>${result.name}</h3>
+            <p>${result.description}</p>
+            <button class="book-button">Book Now</button>
+         `;
+
+         resultsContainer.appendChild(resultElement);
+      });
    }).catch((error) => {
-      console.log(error);
+      console.error(error);
    });
+});
+
+clearButton.addEventListener("click", () => {
+   resultsContainer.innerHTML = "";
 });
